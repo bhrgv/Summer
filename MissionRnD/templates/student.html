@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Student Details</title>
+	</head>
+    <body>
+            <br><br>
+            <h1 style="color:blue">Student Details of college {{ college.name }}</h1>
+        <br><br>
+            <ol>
+            {% for student in students %}
+
+                <li>
+                    {{ student.name }}
+                </li>
+
+            {% endfor %}
+            </ol>
+    </body>
+</html>

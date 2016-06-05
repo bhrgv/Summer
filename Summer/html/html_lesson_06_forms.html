@@ -1,0 +1,51 @@
+<html>
+
+<!--
+Forms in their various forms are the heart of taking data of all kinds from the end user. This presupposes that there
+is a backend which accepts and processes the data in the forms.
+
+Since we have not covered backend, we will just focus on display of common forms in this lesson and we will revisit them
+in future units.
+
+They will look ugly for now, but we will fix up the look and feel in the next unit.
+
+-->
+<head>
+<title>Understanding Forms</title>
+</head>
+<body>
+<!--
+
+Create a simple registration form as shown in image.
+Don't worry about alignment and justification. we will do it in next unit.
+-->
+<h1>
+ Sample Registration Form 
+</h1>
+
+<form>
+<fieldset>
+ <legend>Registration Details</legend>
+
+<label>Email address</label>
+ <input type="text" placeholder="enter valid email"/><br>
+<label>Password</label>
+ <input type="password" placeholder="password"/><br>
+<label> Retype Password</label>
+ <input type="password" placeholder="retype password"/><br>
+<label> Gender</label>
+ Male <input type="radio" name="sex"/>
+             Female<input type="radio" name="sex"/><br>
+ <input type="submit" value="register"/>
+ </fieldset>
+</form>
+<form>
+<h1>
+ Sample Post Entry 
+</h1>
+<textarea placeholder="what on your mind today?"></textarea><br>
+ <input type="submit" value="submit"/>
+</form>
+</body>
+</html>
+

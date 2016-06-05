@@ -1,0 +1,10 @@
+Respect Sir,Madam,
+    This is to Inform you that student {{marks.name.name}} has scored {{marks.total}} in the Mock Test 1 conducted in
+    the Python Course conducted by Mission R&D.
+
+   The Class highest is {{highest.max}} , Lowest is {{lowest.min}} and Class Average is {{average.avg}} for {{total}} students.
+
+    Thankyou,
+
+    Mission R&D
+
