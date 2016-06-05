@@ -4,7 +4,7 @@ import sys,os
 #from django.core.management import setup_environ
 #from MissionRnD import settings
 
-sys.path.append("C:/MissionRnD/")
+sys.path.append("C:/IIIT-Summer/MissionRnD/")
 os.environ["DJANGO_SETTINGS_MODULE"] = "MissionRnD.settings"
 django.setup()
 
