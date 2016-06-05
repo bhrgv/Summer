@@ -4,7 +4,7 @@ import sys,os
 #from django.core.management import setup_environ
 #from MissionRnD import settings
 
-sys.path.append("C:/MissionRnD/")
+sys.path.append("C:/IIIT-Summer/MissionRnD/")
 os.environ["DJANGO_SETTINGS_MODULE"] = "MissionRnD.settings"
 django.setup()
 from College.models import *
@@ -76,8 +76,8 @@ query10=College.objects.values('name').order_by('location')
 #how many colleges in each location sort by count DESC
 from django.db.models import Count
 query11=College.objects.values('location').annotate(count=Count('location')).order_by('-count')
-print query11.query
-print query11
+#print query11.query
+#print query11
 
 
 #acronym and contact of college in each location sort by location
@@ -94,8 +94,8 @@ query13=Student.objects.all().count()
 
 #get students who have rohit int their name
 query14=Student.objects.filter(name__icontains='rohit')
-print query14.query
-print query14
+#print query14.query
+#print query14
 
 
 #get all students from bvritn
@@ -131,7 +131,7 @@ query19=Student.objects.values('college__location').annotate(count=Count('colleg
 #get location with max student count
 from django.db.models import Max
 query20=Student.objects.values('college__location').annotate(count=Count('college__location')).order_by('count').aggregate(Max('count'))
-print query20
+#print query20
 
 
 #Identify the Problem
@@ -139,8 +139,8 @@ print query20
 #query21=Student.objects.values('college__acronym').annotate(count=Count('college__acronym'))
 #query22=Teacher.objects.values('college__acronym').annotate(count=Count('college__acronym'))
 query21=College.objects.annotate(count1=Count('student',distinct=True)).annotate(count2=Count('teacher',distinct=True)).values("acronym","count1","count2")
-print query21.query
-print query21
+#print query21.query
+#print query21
 
 
 #Sort by total desc - get total, name and college acronym
@@ -158,7 +158,7 @@ query22=Marks.objects.values_list("total","name__name","name__college__acronym")
 #Get total student count
 query23=Marks.objects.all().count()
 #print query23.query
-print query23
+#print query23
 
 
 #Get of folks who got >=30
@@ -167,12 +167,16 @@ print query23
 
 #average score and student count for each college
 from django.db.models import Avg
-query25=Marks.objects.all().values('total').annotate(count=Count('name__college__acronym'))
-print query25
+query25=Marks.objects.values('name__college__acronym').annotate(count=Count('name'),avg=Avg('total'))
+#print query25.query
+#print query25
 
 
 #class min, average and max -> Coming from the MockTest1 (ie) only for non-dropped students.
-
+from django.db.models import Case,When,IntegerField,Min
+query26=Marks.objects.aggregate(max=Max(Case(When(name__dropout=0,then='total')),output_field=IntegerField()),avg=Avg(Case(When(name__dropout=0,then='total')),output_field=IntegerField()),min=Min(Case(When(name__dropout=0,then='total')),output_field=IntegerField()))
+#print query26.query
+#print query26
 
 #min max and average over all colleges -> Coming from College model assuming that dropped students are also valid class students. Did it really change?
 

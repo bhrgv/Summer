@@ -2,10 +2,11 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/College/urls.py" />
-    <bookmark url="file://$PROJECT_DIR$/queries.py" line="215" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2507a1b0-5861-486f-aecf-a21b34d72403" name="Default" comment="" />
+    <list default="true" id="2507a1b0-5861-486f-aecf-a21b34d72403" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Queries/queries.py" afterPath="$PROJECT_DIR$/../Queries/queries.py" />
+    </list>
     <ignored path="MissionRnD.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -33,16 +34,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="queries.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/queries.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2686">
-              <caret line="159" column="1" selection-start-line="159" selection-start-column="1" selection-end-line="159" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/College/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -53,26 +44,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="onlinedb.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/onlinedb.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-              <folding>
-                <marker date="1465116081448" expanded="true" signature="3356:3389" placeholder="DELETE FROM " />
-                <marker date="1465116081448" expanded="true" signature="3403:3438" placeholder="DELETE FROM " />
-                <marker date="1465116081448" expanded="true" signature="3452:3487" placeholder="DELETE FROM " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -558,7 +535,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14348462" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -954,11 +931,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding>
-            <marker date="1465116081448" expanded="true" signature="3356:3389" placeholder="DELETE FROM " />
-            <marker date="1465116081448" expanded="true" signature="3403:3438" placeholder="DELETE FROM " />
-            <marker date="1465116081448" expanded="true" signature="3452:3487" placeholder="DELETE FROM " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
