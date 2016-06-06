@@ -1,13 +1,13 @@
 <html>
 	<head>
-		<title>Student Details</title>
+		<title>College Details</title>
 	</head>
     <body>
             <br><br>
-            <h1 style="color:blue">Student Details of {{ name }}</h1>
+            <h1 style="color:blue">College Details of {{ college.name }}</h1>
         <br><br>
             <ol>
-            {% for student in students %}
+            {% for student in college.student_set.all %}
 
                 <li>
                     {{ student.name }}

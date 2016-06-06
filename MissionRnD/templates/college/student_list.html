@@ -4,13 +4,13 @@
 	</head>
     <body>
             <br><br>
-            <h1 style="color:blue">Student Details of {{ name }}</h1>
+            <h1 style="color:blue">Student List</h1>
         <br><br>
             <ol>
-            {% for student in students %}
+            {% for college in object_list %}
 
                 <li>
-                    {{ student.name }}
+                    {{ college.name }}
                 </li>
 
             {% endfor %}

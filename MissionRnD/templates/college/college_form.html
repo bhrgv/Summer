@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>College Details</title>
+	</head>
+    <body>
+            <br><br>
+            <h1 style="color:blue">Enter College Details</h1>
+			<br><br>
+			<form action="" method="post">{% csrf_token %}
+				{{ form.as_p }}
+				<input type="submit" value="Save" />
+			</form>
+    </body>
+</html>
