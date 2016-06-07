@@ -19,5 +19,5 @@ import views
 from ToDo.models import *
 urlpatterns = [
     url(r'^$',views.show_list,name="list"),
-    url(r'^(?P<id>[0-9]+)$',views.show_items,name="items"),
+    url(r'^(?P<id>[0-9]+)/detail/$',views.show_items,name="items"),
 ]

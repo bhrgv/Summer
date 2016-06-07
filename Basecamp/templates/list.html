@@ -33,13 +33,15 @@
             <div style="width:500px;">
             <ul class="list-group">
             {% for element in list %}
-              <a href="{{ element.id }}">
+              <a href="{{ element.id }}/detail">
               <li class="list-group-item">
                   <span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span> &nbsp;&nbsp;&nbsp;
                   <span class="badge">{{ element.created }}</span>
                   {{ element.name }}</li></a><br>
             {% endfor %}
             </ul>
+            <br>
+            <button type="button" class="btn btn-primary" style="width: 50px;height:50px;"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></button><br><br>
             </div>
             </div>
             </div>
